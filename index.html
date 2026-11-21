@@ -6,7 +6,7 @@
 <title>DLTech | Suporte técnico remoto por AnyDesk, em todo o Brasil</title>
 <meta name="description" content="Suporte técnico 100% remoto: instalação de programas, impressora, computador lento e erros do Windows. Preço combinado antes e pagamento por Pix.">
 <link rel="canonical" href="https://dltechsup.github.io/dltech/">
-<meta name="theme-color" content="#f5f5f7">
+<meta name="theme-color" content="#f0efeb">
 <meta name="referrer" content="no-referrer">
 
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -23,13 +23,14 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
 <script>
   document.documentElement.className += " js";
   setTimeout(function () { if (!window.__dltReady) document.documentElement.className += " reveal-fallback"; }, 2500);
 </script>
-<noscript><style>html.js [data-reveal], html.js .session, html.js .session .s-main, html.js .session .s-tasks li { opacity: 1 !important; transform: none !important; clip-path: none !important; }</style></noscript>
+<noscript><style>html.js [data-reveal], html.js .ml > span, html.js .session, html.js .session .s-main, html.js .session .s-tasks li, html.js .hero-row { opacity: 1 !important; transform: none !important; clip-path: none !important; }</style></noscript>
 
 <script type="application/ld+json">
 {
@@ -58,8 +59,8 @@
     ]
   },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "19:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
   ]
 }
 </script>
@@ -97,7 +98,7 @@
       "name": "Como funciona o pagamento?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Em duas partes, por Pix. O diagnóstico de R$ 60 é pago antes de eu conectar, e o restante só quando o problema estiver resolvido e testado com você. Combinamos tudo por escrito no WhatsApp antes de começar. A análise já é trabalho: é o tempo em que eu identifico a causa e digo com clareza o que pode ser feito. Pagando essa parte antes, você não corre o risco de pagar o valor cheio por algo sem solução."
+        "text": "Em duas partes, por Pix. O diagnóstico de R$ 60 é pago antes de eu conectar, e o restante só quando o problema estiver resolvido e testado com você. Eu envio a chave Pix por escrito no WhatsApp e combinamos tudo antes de começar. A análise já é trabalho: é o tempo em que eu identifico a causa e digo com clareza o que pode ser feito. Pagando essa parte antes, você não corre o risco de pagar o valor cheio por algo sem solução."
       }
     },
     {
@@ -118,10 +119,10 @@
     },
     {
       "@type": "Question",
-      "name": "Quem paga a licença dos programas?",
+      "name": "As licenças estão incluídas?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A licença fica por conta do cliente. Programas pagos, como Windows, Office 365, Adobe Acrobat, AutoCAD, CorelDRAW e antivírus, precisam ser comprados por você no site oficial ou em revenda autorizada. Eu cobro somente pelo serviço de instalação e configuração, e não instalo versões piratas."
+        "text": "Não. A licença fica por conta do cliente. Programas pagos, como Windows, Office 365, Adobe Acrobat, AutoCAD, CorelDRAW e antivírus, precisam ser comprados por você no site oficial ou em revenda autorizada. Eu cobro somente pelo serviço de instalação e configuração, e não instalo versões piratas."
       }
     },
     {
@@ -138,6 +139,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Atendo pequenos negócios: configuração das máquinas, organização de arquivos e rotina de backup, inclusive por plano mensal. O foco é computador e notebook com Windows; dúvidas simples de celular podem ser tiradas durante o atendimento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que você faz com os meus dados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uso só o necessário para combinar e fazer o atendimento: seu nome, seu telefone e a descrição do problema. Eu não vendo dados, não uso o seu número para propaganda e você pode pedir acesso, correção ou exclusão a qualquer momento. Os detalhes estão na Política de Privacidade ."
       }
     }
   ]
@@ -166,21 +175,21 @@
 
 <section class="hero" id="topo">
   <div class="wrap">
-    <h1 class="t1">Seu <span class="screen-inline" aria-hidden="true"><span class="si-win"></span><span class="si-line a"></span><span class="si-line b"></span><span class="si-btn"></span><svg class="si-cursor" viewBox="0 0 17 24" aria-hidden="true"><path d="M1.5 1.5v18.2l4.6-4.3 3.4 7.6 2.9-1.3-3.4-7.5h6.4z" fill="#fff" stroke="#0f1b2d" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="sr">computador</span> resolvido sem sair de casa.</h1>
-    <div class="hero-body">
-      <p class="lead">Suporte técnico remoto para instalar programas, configurar impressora e resolver lentidão e erros do Windows. Eu me conecto com a sua autorização, resolvo e explico o que foi feito.</p>
+    <h1 class="t1"><span class="ml"><span>Computador resolvido</span></span> <span class="ml"><span>sem sair de casa.</span></span></h1>
+    <div class="hero-row">
+      <p class="lead">Suporte técnico remoto pelo AnyDesk: eu me conecto com a sua autorização, resolvo e explico o que foi feito.</p>
       <div class="hero-actions" data-hide-bar>
         <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener">Falar no WhatsApp</a>
         <a class="link" href="#precos">Ver preços <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        <p class="note">Segunda a sexta, 8h às 19h. Sábado, 8h às 15h.</p>
+        <p class="note">Segunda a sexta, 8h às 18h. Sábado, 8h às 12h. Pagamento por Pix. <strong class="mark">Licenças de programas não estão incluídas.</strong></p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="stage" aria-label="Exemplo de atendimento">
+<section class="stage" aria-labelledby="stage-t">
   <div class="wrap">
-    <p class="note" style="margin-bottom:16px">Exemplo ilustrativo: assim você acompanha cada etapa do atendimento.</p>
+    <h2 id="stage-t" data-reveal>Você vê tudo e encerra quando quiser.</h2>
     <div class="session" data-ui role="img" aria-label="Exemplo ilustrativo de um atendimento remoto: sessão ativa autorizada pelo cliente, programas instalados e testados, valor de R$ 150 dividido em diagnóstico de R$ 60 e restante de R$ 90.">
       <div class="s-top">
         <span class="s-live"><i></i>Sessão remota ativa</span>
@@ -206,11 +215,7 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="trust" aria-label="Como eu trabalho">
-  <div class="wrap">
+    <p class="note on-dark cap" data-reveal>Exemplo ilustrativo: assim você acompanha cada etapa do atendimento.</p>
     <div class="trust-grid">
       <div data-reveal><h3>Você autoriza e acompanha.</h3><p>O acesso só abre com o código do seu AnyDesk. Você vê cada clique e encerra quando quiser.</p></div>
       <div data-reveal><h3>Valor combinado por escrito.</h3><p>Preço, horário e forma de pagamento no WhatsApp, antes de qualquer acesso ao seu computador.</p></div>
@@ -221,20 +226,17 @@
 
 <section class="services sec" id="servicos">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 data-reveal>O que eu resolvo por acesso remoto.</h2>
-      <p class="lead" data-reveal>Aquele erro que não sai da tela, o programa que não instala, a impressora que não aparece. Eu entro pelo AnyDesk, resolvo e deixo funcionando.</p>
-    </div>
-    <div class="svc-list">
-      <div class="svc" data-reveal><h3>Instalação de programas</h3><p>Navegadores, leitores de PDF, antivírus, programas de trabalho e drivers, instalados, configurados e testados na hora.</p><a class="link" href="instalar-programas.html">Saiba como funciona <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
-      <div class="svc" data-reveal><h3>Impressora e periféricos</h3><p>Impressora que não imprime ou não aparece, scanner, Wi-Fi e outros aparelhos ligados ao computador.</p><a class="link" href="impressora-nao-imprime.html">Saiba como funciona <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
-      <div class="svc" data-reveal><h3>Computador lento ou travando</h3><p>Limpeza do sistema, programas que pesam na inicialização, atualizações e ajustes de desempenho.</p><a class="link" href="computador-lento.html">Saiba como funciona <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
-      <div class="svc" data-reveal><h3>Erros do Windows e dos programas</h3><p>Mensagens de erro, programa que não abre, atualização que falha e configurações que se perderam, enquanto o Windows ainda liga.</p></div>
-      <div class="svc" data-reveal><h3>Vírus e anúncios indesejados</h3><p>Análise, remoção e orientação para o problema não voltar.</p></div>
-      <div class="svc" data-reveal><h3>Arquivos e backup</h3><p>Tentativa de recuperação de arquivos, organização de pastas e uma rotina de backup simples de manter.</p><p class="note">Cada caso é diferente: as chances variam conforme a forma como o arquivo foi apagado e o uso do computador depois disso. Me chame o quanto antes e eu te digo com sinceridade o que é possível.</p></div>
-      <div class="svc" data-reveal><h3>Pequenos negócios</h3><p>Configuração das máquinas, organização de arquivos, rotina de backup e suporte contínuo por plano mensal.</p></div>
-    </div>
-    <p class="after muted">Se você quiser entender o que foi feito ou aprender a resolver na próxima vez, é só pedir durante o atendimento. A orientação faz parte do serviço.</p>
+    <h2 data-reveal>O que eu resolvo à distância.</h2>
+    <ul class="svc-big">
+      <li data-reveal><a href="instalar-programas.html"><h3>Instalar programas</h3><p>Navegadores, leitores de PDF, antivírus, programas de trabalho e drivers, instalados, configurados e testados na hora.</p><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li data-reveal><a href="impressora-nao-imprime.html"><h3>Impressora</h3><p>Impressora que não imprime ou não aparece, scanner, Wi-Fi e outros aparelhos ligados ao computador.</p><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li data-reveal><a href="computador-lento.html"><h3>Computador lento</h3><p>Limpeza do sistema, programas que pesam na inicialização, atualizações e ajustes de desempenho.</p><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li data-reveal><div class="row"><h3>Erros do Windows</h3><p>Mensagens de erro, programa que não abre, atualização que falha e configurações que se perderam, enquanto o Windows ainda liga.</p></div></li>
+      <li data-reveal><div class="row"><h3>Vírus e anúncios</h3><p>Análise, remoção e orientação para o problema não voltar.</p></div></li>
+      <li data-reveal><div class="row"><h3>Arquivos e backup</h3><div><p>Tentativa de recuperação de arquivos, organização de pastas e uma rotina de backup simples de manter.</p><p class="note">Cada caso é diferente: as chances variam conforme a forma como o arquivo foi apagado e o uso do computador depois disso. Me chame o quanto antes e eu te digo com sinceridade o que é possível.</p></div></div></li>
+      <li data-reveal><div class="row"><h3>Pequenos negócios</h3><p>Configuração das máquinas, organização de arquivos, rotina de backup e suporte contínuo por plano mensal.</p></div></li>
+    </ul>
+    <p class="after muted" data-reveal>Se você quiser entender o que foi feito ou aprender a resolver na próxima vez, é só pedir durante o atendimento. A orientação faz parte do serviço.</p>
   </div>
 </section>
 
@@ -243,7 +245,7 @@
     <div class="limits-grid">
       <h2 id="limites" data-reveal>Atendo só à distância.</h2>
       <div class="limits-text" data-reveal>
-        <p class="lead">Se o seu caso exigir alguém no local, explico o motivo, indico o caminho e cobro só o diagnóstico de R$ 60.</p>
+        <p class="statement">Se o seu caso exigir alguém no local, explico o motivo, indico o caminho e cobro só o diagnóstico de R$ 60.</p>
         <ul class="bullets">
           <li>Não faço visita presencial.</li>
           <li>Não troco nem conserto peças, como tela, HD, placa ou bateria.</li>
@@ -257,24 +259,17 @@
 
 <section class="how sec" id="como-funciona">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 data-reveal>Quatro passos, nenhum difícil.</h2>
-      <p class="lead" data-reveal>Você não precisa entender de computador. Eu guio cada passo, com palavras simples.</p>
+    <h2 data-reveal>Quatro passos, nenhum difícil.</h2>
+    <p class="lead" data-reveal>Você não precisa entender de computador. Eu guio cada passo, com palavras simples.</p>
+    <div class="steps" data-ui>
+      <div class="step s1" data-reveal><span class="when">Primeiro</span><h3>Você me conta</h3><p>Mande uma mensagem descrevendo o problema. Foto da tela ajuda, mas não é obrigatória.</p></div>
+      <div class="step s2" data-reveal><span class="when">Depois</span><h3>Combinamos por escrito</h3><p>Horário, valor e forma de pagamento, no WhatsApp, antes de qualquer acesso.</p></div>
+      <div class="step s3" data-reveal><span class="when">Então</span><h3>Você autoriza o acesso</h3><p>Te guio para abrir o AnyDesk. Você aprova, acompanha na tela e pode encerrar quando quiser.</p></div>
+      <div class="step s4" data-reveal><span class="when">Por fim</span><h3>Resolvido e explicado</h3><p>Testamos juntos e eu explico o que causou o problema, para não acontecer de novo.</p></div>
     </div>
-    <div class="steps">
-      <div class="step" data-reveal><span class="when">Primeiro</span><div><h3>Você me conta</h3><p>Mande uma mensagem descrevendo o problema. Foto da tela ajuda, mas não é obrigatória.</p></div></div>
-      <div class="step" data-reveal><span class="when">Depois</span><div><h3>Combinamos por escrito</h3><p>Horário, valor e forma de pagamento, no WhatsApp, antes de qualquer acesso.</p></div></div>
-      <div class="step" data-reveal><span class="when">Então</span><div><h3>Você autoriza o acesso</h3><p>Te guio para abrir o AnyDesk. Você aprova, acompanha na tela e pode encerrar quando quiser.</p></div></div>
-      <div class="step" data-reveal><span class="when">Por fim</span><div><h3>Resolvido e explicado</h3><p>Testamos juntos e eu explico o que causou o problema, para não acontecer de novo.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="anydesk" aria-labelledby="anydesk-t">
-  <div class="wrap">
-    <div class="anydesk-grid">
+    <div class="anydesk" aria-labelledby="anydesk-t" data-reveal>
       <div>
-        <h2 class="h-t3" id="anydesk-t">Ainda não tem o AnyDesk?</h2>
+        <h3 id="anydesk-t">Ainda não tem o AnyDesk?</h3>
         <p>O programa é gratuito e o download vem direto do site oficial. O arquivo abre e já mostra o seu código de acesso. Se travar em algum passo, me chame e eu te guio.</p>
         <p class="note">Versão para Windows. Baixe apenas de anydesk.com e nunca aceite o programa por anexo ou por link de outra pessoa.</p>
       </div>
@@ -286,12 +281,10 @@
   </div>
 </section>
 
-<section class="sec" id="precos">
+<section class="prices sec" id="precos">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 data-reveal>Preço fixo, combinado antes.</h2>
-      <p class="lead" data-reveal>Todo atendimento tem valor fechado por escrito antes de qualquer acesso. Escolha o que descreve o seu caso e veja o preço.</p>
-    </div>
+    <h2 data-reveal>Preço fixo, combinado antes.</h2>
+    <p class="lead" data-reveal>Todo atendimento tem valor fechado por escrito antes de qualquer acesso. Escolha o que descreve o seu caso e veja o preço.</p>
 
     <div class="finder" data-reveal>
       <input type="radio" name="f" id="f1" checked>
@@ -314,84 +307,129 @@
         </div>
         <div class="panels">
           <article class="panel" id="p1">
-            <p class="p-name">Instalação em desktop</p>
-            <p class="p-price">R$ 150 <small>até 3 programas</small></p>
-            <ul class="bullets"><li>Instalação e configuração dos programas</li><li>Teste final junto com você</li><li>Orientação de como usar, se precisar</li></ul>
-            <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar. O restante só quando estiver resolvido e testado com você. Se não der para resolver, fica apenas o diagnóstico.</p>
-            <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Instala%C3%A7%C3%A3o%20em%20desktop%20%28R%24%20150%29." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            <div class="p-left">
+              <p class="p-name">Instalação em desktop</p>
+              <p class="p-price">R$ 150</p>
+              <p class="p-unit">até 3 programas</p>
+            </div>
+            <div class="p-right">
+              <ul class="bullets"><li>Instalação e configuração dos programas</li><li>Teste final junto com você</li><li>Orientação de como usar, se precisar</li></ul>
+              <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar. O restante só quando estiver resolvido e testado com você. Se não der para resolver, fica apenas o diagnóstico.</p>
+              <p class="p-lic"><strong class="mark">Licenças de programas não estão incluídas.</strong></p>
+              <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Instala%C3%A7%C3%A3o%20em%20desktop%20%28R%24%20150%29." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            </div>
           </article>
           <article class="panel" id="p2">
-            <p class="p-name">Instalação completa em notebook ou máquina nova</p>
-            <p class="p-price">R$ 250 a 350</p>
-            <ul class="bullets"><li>Programas, drivers e antivírus</li><li>Backup e ajustes iniciais</li><li>O valor final depende do que precisa ser instalado, e eu confirmo antes de começar</li></ul>
-            <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar. O restante só quando estiver resolvido e testado com você. Se não der para resolver, fica apenas o diagnóstico.</p>
-            <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Instala%C3%A7%C3%A3o%20completa%20em%20notebook%20ou%20m%C3%A1quina%20nova%20%28R%24%20250%20a%20350%29." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            <div class="p-left">
+              <p class="p-name">Instalação completa em notebook ou máquina nova</p>
+              <p class="p-price">R$ 250 a 350</p>
+            </div>
+            <div class="p-right">
+              <ul class="bullets"><li>Programas, drivers e antivírus</li><li>Backup e ajustes iniciais</li><li>O valor final depende do que precisa ser instalado, e eu confirmo antes de começar</li></ul>
+              <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar. O restante só quando estiver resolvido e testado com você. Se não der para resolver, fica apenas o diagnóstico.</p>
+              <p class="p-lic"><strong class="mark">Licenças de programas não estão incluídas.</strong></p>
+              <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Instala%C3%A7%C3%A3o%20completa%20em%20notebook%20ou%20m%C3%A1quina%20nova%20%28R%24%20250%20a%20350%29." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            </div>
           </article>
           <article class="panel" id="p3">
-            <p class="p-name">Correção rápida</p>
-            <p class="p-price">R$ 80 <small>até 20 minutos</small></p>
-            <ul class="bullets"><li>Driver, impressora ou ajuste simples</li><li>Teste na hora, com você</li><li>Se o caso for maior que isso, eu aviso e combinamos antes de continuar</li></ul>
-            <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar. O restante só quando estiver resolvido. Se não der para resolver, fica apenas o diagnóstico.</p>
-            <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Corre%C3%A7%C3%A3o%20r%C3%A1pida%20%28R%24%2080%29." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            <div class="p-left">
+              <p class="p-name">Correção rápida</p>
+              <p class="p-price">R$ 80</p>
+              <p class="p-unit">até 20 minutos</p>
+            </div>
+            <div class="p-right">
+              <ul class="bullets"><li>Driver, impressora ou ajuste simples</li><li>Teste na hora, com você</li><li>Se o caso for maior que isso, eu aviso e combinamos antes de continuar</li></ul>
+              <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar. O restante só quando estiver resolvido. Se não der para resolver, fica apenas o diagnóstico.</p>
+              <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Corre%C3%A7%C3%A3o%20r%C3%A1pida%20%28R%24%2080%29." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            </div>
           </article>
           <article class="panel" id="p4">
-            <p class="p-name">Atendimento por hora</p>
-            <p class="p-price">R$ 150 <small>por hora, mínimo de 1 hora</small></p>
-            <ul class="bullets"><li>Diagnóstico da causa, limpeza e ajustes</li><li>Explicação do que causou o problema</li><li>Se passar de 1 hora, eu aviso antes de continuar</li></ul>
-            <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar, abatido do total. Neste caso o valor é pelo tempo de trabalho, combinado por escrito antes de começar.</p>
-            <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Atendimento%20por%20hora%20%28R%24%20150%20por%20hora%29.%20Meu%20computador%20est%C3%A1%20lento%20ou%20com%20erro." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            <div class="p-left">
+              <p class="p-name">Atendimento por hora</p>
+              <p class="p-price">R$ 150</p>
+              <p class="p-unit">por hora, mínimo de 1 hora</p>
+            </div>
+            <div class="p-right">
+              <ul class="bullets"><li>Diagnóstico da causa, limpeza e ajustes</li><li>Explicação do que causou o problema</li><li>Se passar de 1 hora, eu aviso antes de continuar</li></ul>
+              <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar, abatido do total. Neste caso o valor é pelo tempo de trabalho, combinado por escrito antes de começar.</p>
+              <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Atendimento%20por%20hora%20%28R%24%20150%20por%20hora%29.%20Meu%20computador%20est%C3%A1%20lento%20ou%20com%20erro." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            </div>
           </article>
           <article class="panel" id="p5">
-            <p class="p-name">Atendimento por hora, para casos que já foram mexidos</p>
-            <p class="p-price">R$ 150 <small>por hora, mínimo de 1 hora</small></p>
-            <ul class="bullets"><li>Antes de mexer, pergunto o que já foi tentado e te aviso do risco de piorar</li><li>Quando possível, copio os arquivos importantes antes de começar</li><li>Cobrado pelo tempo de trabalho, combinado por escrito antes</li></ul>
-            <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar, abatido do total. Se for preciso técnico no local, eu explico o motivo e indico o caminho.</p>
-            <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Atendimento%20por%20hora%20%28R%24%20150%20por%20hora%29.%20J%C3%A1%20tentaram%20resolver%20e%20piorou." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            <div class="p-left">
+              <p class="p-name">Atendimento por hora, para casos que já foram mexidos</p>
+              <p class="p-price">R$ 150</p>
+              <p class="p-unit">por hora, mínimo de 1 hora</p>
+            </div>
+            <div class="p-right">
+              <ul class="bullets"><li>Antes de mexer, pergunto o que já foi tentado e te aviso do risco de piorar</li><li>Quando possível, copio os arquivos importantes antes de começar</li><li>Cobrado pelo tempo de trabalho, combinado por escrito antes</li></ul>
+              <p class="p-pay">Diagnóstico de R$ 60 por Pix antes de conectar, abatido do total. Se for preciso técnico no local, eu explico o motivo e indico o caminho.</p>
+              <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%3A%20Atendimento%20por%20hora%20%28R%24%20150%20por%20hora%29.%20J%C3%A1%20tentaram%20resolver%20e%20piorou." target="_blank" rel="noopener">Pedir esse atendimento</a>
+            </div>
           </article>
           <article class="panel" id="p6">
-            <p class="p-name">Plano Pessoal</p>
-            <p class="p-price">R$ 150 <small>por mês</small></p>
-            <ul class="bullets"><li>Até 2 atendimentos curtos por mês</li><li>Prioridade no atendimento</li><li>Para quem usa o computador em casa e quer alguém de confiança por perto</li></ul>
-            <p class="p-pay">Combinado por escrito antes de começar. Pagamento mensal por Pix.</p>
-            <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%20saber%20mais%20sobre%20o%20Plano%20Pessoal%20%28R%24%20150%20por%20m%C3%AAs%29." target="_blank" rel="noopener">Quero o Plano Pessoal</a>
+            <div class="p-left">
+              <p class="p-name">Plano Pessoal</p>
+              <p class="p-price">R$ 150</p>
+              <p class="p-unit">por mês</p>
+            </div>
+            <div class="p-right">
+              <ul class="bullets"><li>Até 2 atendimentos curtos por mês</li><li>Prioridade no atendimento</li><li>Para quem usa o computador em casa e quer alguém de confiança por perto</li></ul>
+              <p class="p-pay">Combinado por escrito antes de começar. Pagamento mensal por Pix.</p>
+              <p class="p-lic"><strong class="mark">Licenças de programas não estão incluídas.</strong></p>
+              <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%20saber%20mais%20sobre%20o%20Plano%20Pessoal%20%28R%24%20150%20por%20m%C3%AAs%29." target="_blank" rel="noopener">Quero o Plano Pessoal</a>
+            </div>
           </article>
           <article class="panel" id="p7">
-            <p class="p-name">Plano Empresa</p>
-            <p class="p-price">R$ 350 <small>por mês, até 5 máquinas</small></p>
-            <ul class="bullets"><li>Até 4 horas de atendimento por mês</li><li>Impressora, sistema e backup</li><li>Prioridade no atendimento</li></ul>
-            <p class="p-pay">Para MEI e lojas. Combinado por escrito antes de começar. Pagamento mensal por Pix.</p>
-            <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%20saber%20mais%20sobre%20o%20Plano%20Empresa%20%28R%24%20350%20por%20m%C3%AAs%29." target="_blank" rel="noopener">Quero o Plano Empresa</a>
+            <div class="p-left">
+              <p class="p-name">Plano Empresa</p>
+              <p class="p-price">R$ 350</p>
+              <p class="p-unit">por mês, até 5 máquinas</p>
+            </div>
+            <div class="p-right">
+              <ul class="bullets"><li>Até 4 horas de atendimento por mês</li><li>Impressora, sistema e backup</li><li>Prioridade no atendimento</li></ul>
+              <p class="p-pay">Para MEI e lojas. Combinado por escrito antes de começar. Pagamento mensal por Pix.</p>
+              <p class="p-lic"><strong class="mark">Licenças de programas não estão incluídas.</strong></p>
+              <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%20saber%20mais%20sobre%20o%20Plano%20Empresa%20%28R%24%20350%20por%20m%C3%AAs%29." target="_blank" rel="noopener">Quero o Plano Empresa</a>
+            </div>
           </article>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="price-block">
-      <h3 data-reveal>Todos os preços, em um só lugar.</h3>
-      <div class="price-list">
-        <div class="price-row" data-reveal><div><strong>Correção rápida</strong><span>Driver, impressora ou ajuste simples, até 20 minutos</span></div><div class="v">R$ 80</div></div>
-        <div class="price-row" data-reveal><div><strong>Instalação em desktop</strong><span>Até 3 programas</span></div><div class="v">R$ 150</div></div>
-        <div class="price-row" data-reveal><div><strong>Notebook ou máquina nova</strong><span>Programas, drivers, antivírus, backup e ajustes</span></div><div class="v">R$ 250 a 350</div></div>
-        <div class="price-row" data-reveal><div><strong>Atendimento por hora</strong><span>Problemas complexos ou que já foram mexidos, mínimo de 1 hora</span></div><div class="v">R$ 150 por hora</div></div>
-        <div class="price-row" data-reveal><div><strong>Diagnóstico</strong><span>Pago por Pix antes de conectar e abatido do valor. Se não houver solução remota, é o único valor cobrado.</span></div><div class="v">R$ 60</div></div>
+<section class="menu-sec sec" aria-labelledby="todos-t">
+  <div class="wrap">
+    <div class="menu-grid">
+      <div class="menu-copy">
+        <h2 id="todos-t" data-reveal>Todos os preços, em um só lugar.</h2>
+        <p class="lead" data-reveal>Tudo por Pix e combinado por escrito no WhatsApp, antes de qualquer acesso.</p>
+      </div>
+      <div class="sheet" data-ui data-reveal>
+        <h3>Atendimentos avulsos</h3>
+        <div class="row"><div class="what"><strong>Correção rápida</strong><span>Driver, impressora ou ajuste simples, até 20 minutos</span></div><i class="dots" aria-hidden="true"></i><b>R$ 80</b></div>
+        <div class="row"><div class="what"><strong>Instalação em desktop</strong><span>Até 3 programas, com teste final junto com você</span></div><i class="dots" aria-hidden="true"></i><b>R$ 150</b></div>
+        <div class="row"><div class="what"><strong>Notebook ou máquina nova</strong><span>Programas, drivers, antivírus, backup e ajustes</span></div><i class="dots" aria-hidden="true"></i><b>R$ 250 a 350</b></div>
+        <div class="row"><div class="what"><strong>Atendimento por hora</strong><span>Problemas complexos ou que já foram mexidos, mínimo de 1 hora</span></div><i class="dots" aria-hidden="true"></i><b>R$ 150 por hora</b></div>
+        <div class="row"><div class="what"><strong>Diagnóstico</strong><span>Pago antes de conectar e abatido do valor. Se não houver solução remota, é o único valor cobrado</span></div><i class="dots" aria-hidden="true"></i><b>R$ 60</b></div>
+        <h3>Planos mensais</h3>
+        <div class="row"><div class="what"><strong>Plano Pessoal</strong><span>Até 2 atendimentos curtos por mês e prioridade</span></div><i class="dots" aria-hidden="true"></i><b>R$ 150 por mês</b></div>
+        <div class="row"><div class="what"><strong>Plano Empresa</strong><span>Até 5 máquinas e até 4 horas de atendimento por mês</span></div><i class="dots" aria-hidden="true"></i><b>R$ 350 por mês</b></div>
+        <p class="sheet-note"><strong class="mark">Licenças de programas não estão incluídas.</strong></p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="price-block">
-      <h3 data-reveal>Planos mensais.</h3>
-      <div class="plans">
-        <div class="plan a" data-reveal>
-          <h3>Plano Pessoal</h3>
-          <p class="p-price">R$ 150 <small>por mês</small></p>
-          <ul class="bullets"><li>Até 2 atendimentos curtos por mês</li><li>Prioridade no atendimento</li><li>Pagamento mensal por Pix</li></ul>
-          <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%20saber%20mais%20sobre%20o%20Plano%20Pessoal%20%28R%24%20150%20por%20m%C3%AAs%29." target="_blank" rel="noopener">Quero o Plano Pessoal</a>
-        </div>
-        <div class="plan b" data-reveal>
-          <h3>Plano Empresa</h3>
-          <p class="p-price">R$ 350 <small>por mês, até 5 máquinas</small></p>
-          <ul class="bullets"><li>Até 4 horas de atendimento por mês</li><li>Impressora, sistema e backup</li><li>Prioridade no atendimento</li><li>Pagamento mensal por Pix</li></ul>
-          <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20quero%20saber%20mais%20sobre%20o%20Plano%20Empresa%20%28R%24%20350%20por%20m%C3%AAs%29." target="_blank" rel="noopener">Quero o Plano Empresa</a>
-        </div>
+<section class="license sec" id="licencas" aria-labelledby="lic-t">
+  <div class="wrap">
+    <h2 id="lic-t" data-reveal>Licenças não estão incluídas.</h2>
+    <div class="license-grid">
+      <p class="statement" data-reveal>Você paga só pelo meu serviço. A licença do programa é por sua conta.</p>
+      <div data-reveal>
+        <p>Programas que exigem licença paga, como Windows, Microsoft Office 365, Adobe Acrobat, AutoCAD, CorelDRAW, antivírus pagos e jogos, devem ser comprados por você, direto no site oficial do fabricante ou em revenda autorizada.</p>
+        <p>Quando existir uma alternativa gratuita que resolva o mesmo problema, eu indico antes de você gastar. Não instalo versões piratas nem ativadores.</p>
       </div>
     </div>
   </div>
@@ -399,54 +437,45 @@
 
 <section class="pay sec" id="pagamento">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 data-reveal>Como o pagamento funciona.</h2>
-      <p class="lead" data-reveal>Tudo por Pix, combinado por escrito no WhatsApp antes de qualquer acesso. Você sabe o valor, o que está incluído e o que acontece se o problema não tiver solução.</p>
-    </div>
+    <h2 data-reveal>Como o pagamento funciona.</h2>
+    <p class="lead" data-reveal>Tudo por Pix, combinado por escrito no WhatsApp antes de qualquer acesso. Você sabe o valor, o que está incluído e o que acontece se o problema não tiver solução.</p>
     <div class="pay-grid">
       <div class="pay-copy">
-        <div class="pay-step" data-reveal><strong>Antes: diagnóstico de R$ 60.</strong><p>Pago por Pix antes de eu conectar. Nos primeiros minutos eu só analiso: identifico a causa e te digo, com clareza, o que pode ser feito, sem alterar nada.</p></div>
-        <div class="pay-step" data-reveal><strong>Durante: confirmação antes de mexer.</strong><p>Depois de analisar, eu digo se dá para resolver, quanto tempo leva e o valor restante. Você decide se quer seguir.</p></div>
-        <div class="pay-step" data-reveal><strong>Depois: o restante, com tudo resolvido.</strong><p>Testamos juntos e o restante é pago na conclusão, também por Pix.</p></div>
+        <div class="pay-step" data-reveal><h3>Antes: diagnóstico de R$ 60.</h3><p>Pago por Pix antes de eu conectar. Eu envio a chave Pix por escrito, no WhatsApp. Nos primeiros minutos eu só analiso: identifico a causa e te digo, com clareza, o que pode ser feito, sem alterar nada.</p></div>
+        <div class="pay-step" data-reveal><h3>Durante: confirmação antes de mexer.</h3><p>Depois de analisar, eu digo se dá para resolver, quanto tempo leva e o valor restante. Você decide se quer seguir.</p></div>
+        <div class="pay-step" data-reveal><h3>Depois: o restante, com tudo resolvido.</h3><p>Testamos juntos e o restante é pago na conclusão, também por Pix.</p></div>
       </div>
       <div class="pay-chat" data-reveal>
-        <div class="chat" data-ui role="img" aria-label="Exemplo de conversa no WhatsApp: o cliente conta que a impressora parou de imprimir e recebe o valor de R$ 80, com diagnóstico de R$ 60 antes e R$ 20 no fim.">
+        <div class="chat" data-ui role="img" aria-label="Exemplo de conversa no WhatsApp: o cliente conta que a impressora parou de imprimir; o técnico informa o valor de R$ 80, com diagnóstico de R$ 60 antes e R$ 20 no fim, combina o horário e envia a chave Pix.">
           <p class="cap">Exemplo de conversa no WhatsApp, antes de qualquer acesso</p>
           <div class="bub in">Oi! Minha impressora parou de imprimir.</div>
           <div class="bub out">Consigo ver isso por acesso remoto. É uma correção rápida: R$ 80. O diagnóstico de R$ 60 vai por Pix antes de eu conectar; os R$ 20 restantes só no fim, com a impressora funcionando.</div>
           <div class="bub out">Pode ser hoje às 15h?</div>
-          <div class="bub in">Pode! Já te mando a chave Pix.</div>
+          <div class="bub in">Pode!</div>
+          <div class="bub out">Combinado! Já te envio aqui a chave Pix para o diagnóstico de R$ 60.</div>
+          <p class="cap end">Quem envia a chave Pix sou eu, por escrito, no WhatsApp.</p>
         </div>
       </div>
     </div>
 
     <div class="cases">
-      <div class="case" data-reveal><strong>O problema é resolvido</strong><p>Você paga o diagnóstico no início e o restante na conclusão, fechando o valor combinado.</p></div>
-      <div class="case" data-reveal><strong>Não tem solução remota</strong><p>Acontece quando o defeito é de peça ou exige alguém no local. Eu explico o motivo e indico o caminho. O restante não é cobrado; o diagnóstico, por ser o trabalho de análise já feito, não é devolvido.</p></div>
-      <div class="case" data-reveal><strong>Você prefere não seguir</strong><p>Depois de saber o que é e quanto fica, a decisão é sua. Se parar ali, você paga apenas o diagnóstico.</p></div>
+      <div class="case" data-reveal><h3>O problema é resolvido</h3><p>Você paga o diagnóstico no início e o restante na conclusão, fechando o valor combinado.</p></div>
+      <div class="case" data-reveal><h3>Não tem solução remota</h3><p>Acontece quando o defeito é de peça ou exige alguém no local. Eu explico o motivo e indico o caminho. O restante não é cobrado; o diagnóstico, por ser o trabalho de análise já feito, não é devolvido.</p></div>
+      <div class="case" data-reveal><h3>Você prefere não seguir</h3><p>Depois de saber o que é e quanto fica, a decisão é sua. Se parar ali, você paga apenas o diagnóstico.</p></div>
     </div>
-    <p class="note" style="margin-top:20px;max-width:52em">Exceção: nos atendimentos por hora (problemas complexos ou que já foram mexidos), o valor é pelo tempo de trabalho e fica combinado por escrito antes de começar.</p>
-
-    <div class="license">
-      <h3 data-reveal>Licenças de programas não estão incluídas.</h3>
-      <div data-reveal>
-        <p>O valor cobrado é apenas pelo meu serviço de instalação, configuração e suporte. Programas que exigem licença paga, como Windows, Microsoft Office 365, Adobe Acrobat, AutoCAD, CorelDRAW, antivírus pagos e jogos, devem ser comprados por você, direto no site oficial do fabricante ou em revenda autorizada.</p>
-        <p>Quando existir uma alternativa gratuita que resolva o mesmo problema, eu indico antes de você gastar.</p>
-      </div>
-    </div>
+    <p class="note" data-reveal style="margin-top:20px;max-width:52em">Exceção: nos atendimentos por hora (problemas complexos ou que já foram mexidos), o valor é pelo tempo de trabalho e fica combinado por escrito antes de começar.</p>
   </div>
 </section>
 
-<section class="sec" id="seguranca">
+<section class="safe sec" id="seguranca">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 data-reveal>Seus dados não passam por aqui.</h2>
-      <p class="lead" data-reveal>Este site não tem cadastro, login nem cookies. O formulário só monta a sua mensagem e abre o WhatsApp no seu próprio aparelho.</p>
-    </div>
+    <h2 data-reveal>Este site não guarda nada sobre você.</h2>
+    <p class="lead" data-reveal>Sem cadastro, login, cookies ou rastreadores. Seus dados só chegam até mim quando você decide falar comigo.</p>
     <div class="princ">
-      <div data-reveal><h3>Nada é armazenado</h3><p>Sem banco de dados, sem cookies de rastreamento e sem envio para serviços de terceiros. O que você digita fica na sua tela até você enviar.</p></div>
+      <div data-reveal><h3>Nada é armazenado aqui</h3><p>Sem banco de dados, sem cookies e sem envio para serviços de terceiros. As fontes e as imagens ficam no próprio site.</p></div>
       <div data-reveal><h3>Só o necessário</h3><p>Peço seu nome e a descrição do problema. Não peço CPF, endereço, dados de cartão nem senhas para agendar.</p></div>
       <div data-reveal><h3>Sessão que termina</h3><p>O acesso pelo AnyDesk vale só para aquele atendimento. Mesmo com o seu ID, a conexão só abre quando você autoriza na sua tela.</p></div>
+      <div data-reveal><h3>Seus direitos, pela LGPD</h3><p>Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento. Veja a <a class="inline" href="privacidade.html">Política de Privacidade</a>.</p></div>
     </div>
     <div class="scam" data-reveal>
       <div>
@@ -457,7 +486,7 @@
         <li>Nunca peço senha de banco, cartão, Pix ou código que chega por SMS. Se for preciso acessar algo pessoal, você mesmo digita.</li>
         <li>Nunca abro o aplicativo do seu banco durante o atendimento. Se eu pedir isso, desconfie e encerre.</li>
         <li>Baixe o AnyDesk somente pelo site oficial anydesk.com. Eu te mando o endereço, nunca um arquivo por anexo.</li>
-        <li>O pagamento é só por Pix para a minha chave, informada por escrito no WhatsApp. Não trabalho com boleto, link de pagamento nem cobrança por telefone.</li>
+        <li>O pagamento é só por Pix para a minha chave, que eu envio por escrito no WhatsApp. Não trabalho com boleto, link de pagamento nem cobrança por telefone.</li>
         <li>Feche a sessão do AnyDesk ao final e confira que o ícone saiu da barra de tarefas. Se quiser, pode desinstalar depois.</li>
         <li>Eu não ligo do nada dizendo que seu computador está infectado. O contato começa sempre por você.</li>
       </ul>
@@ -473,40 +502,31 @@
         <details data-reveal open><summary>Não sei baixar o AnyDesk, e agora?</summary><div class="ans"><p>Tem um botão de download aqui no site, na seção Como funciona, que leva direto ao site oficial. Se preferir, me chame no WhatsApp e eu te acompanho no passo a passo: baixar, abrir e me passar o código que aparece na tela.</p></div></details>
         <details data-reveal><summary>Preciso entender de computador?</summary><div class="ans"><p>Não. Eu te guio por mensagem ou telefone em cada passo, com palavras simples. Se travar, eu explico de outra forma.</p></div></details>
         <details data-reveal><summary>É seguro dar acesso ao meu computador?</summary><div class="ans"><p>O acesso é pelo AnyDesk, um programa gratuito, e a sessão só abre quando você me passa o código que aparece na sua tela. Você acompanha tudo e encerra quando quiser. Não peço senha de banco, cartão ou documentos.</p></div></details>
-        <details data-reveal><summary>Como funciona o pagamento?</summary><div class="ans"><p>Em duas partes, por Pix. O diagnóstico de R$ 60 é pago antes de eu conectar, e o restante só quando o problema estiver resolvido e testado com você. Combinamos tudo por escrito no WhatsApp antes de começar.</p><p>A análise já é trabalho: é o tempo em que eu identifico a causa e digo com clareza o que pode ser feito. Pagando essa parte antes, você não corre o risco de pagar o valor cheio por algo sem solução.</p></div></details>
+        <details data-reveal><summary>Como funciona o pagamento?</summary><div class="ans"><p>Em duas partes, por Pix. O diagnóstico de R$ 60 é pago antes de eu conectar, e o restante só quando o problema estiver resolvido e testado com você. Eu envio a chave Pix por escrito no WhatsApp e combinamos tudo antes de começar.</p><p>A análise já é trabalho: é o tempo em que eu identifico a causa e digo com clareza o que pode ser feito. Pagando essa parte antes, você não corre o risco de pagar o valor cheio por algo sem solução.</p></div></details>
         <details data-reveal><summary>E se o problema não for resolvido?</summary><div class="ans"><p>Eu explico o motivo, indico o caminho (uma assistência local, uma troca de peça, um contato do fabricante) e você paga apenas o diagnóstico. O restante não é cobrado. O diagnóstico não é devolvido, porque paga a análise que já foi feita.</p><p>Se você preferir não seguir depois de saber o que é e quanto fica, é a mesma regra: você paga apenas o diagnóstico.</p></div></details>
         <details data-reveal><summary>Já tentei resolver sozinho e piorou. Dá para ajudar?</summary><div class="ans"><p>Muitas vezes sim. Antes de mexer, pergunto o que já foi tentado e te aviso do risco de piorar. Quando possível, copio os arquivos importantes antes de começar. Esses casos são cobrados por hora, combinados por escrito antes.</p></div></details>
-        <details data-reveal><summary>Quem paga a licença dos programas?</summary><div class="ans"><p>A licença fica por conta do cliente. Programas pagos, como Windows, Office 365, Adobe Acrobat, AutoCAD, CorelDRAW e antivírus, precisam ser comprados por você no site oficial ou em revenda autorizada. Eu cobro somente pelo serviço de instalação e configuração, e não instalo versões piratas.</p></div></details>
+        <details data-reveal><summary>As licenças estão incluídas?</summary><div class="ans"><p>Não. A licença fica por conta do cliente. Programas pagos, como Windows, Office 365, Adobe Acrobat, AutoCAD, CorelDRAW e antivírus, precisam ser comprados por você no site oficial ou em revenda autorizada. Eu cobro somente pelo serviço de instalação e configuração, e não instalo versões piratas.</p></div></details>
         <details data-reveal><summary>Você faz visita presencial?</summary><div class="ans"><p>Não. O atendimento é somente à distância, em todo o Brasil. Se o seu caso precisar de alguém no local, eu explico o motivo e indico o caminho.</p></div></details>
         <details data-reveal><summary>Atende empresas e celulares?</summary><div class="ans"><p>Atendo pequenos negócios: configuração das máquinas, organização de arquivos e rotina de backup, inclusive por plano mensal. O foco é computador e notebook com Windows; dúvidas simples de celular podem ser tiradas durante o atendimento.</p></div></details>
+        <details data-reveal><summary>O que você faz com os meus dados?</summary><div class="ans"><p>Uso só o necessário para combinar e fazer o atendimento: seu nome, seu telefone e a descrição do problema. Eu não vendo dados, não uso o seu número para propaganda e você pode pedir acesso, correção ou exclusão a qualquer momento. Os detalhes estão na <a class="inline" href="privacidade.html">Política de Privacidade</a>.</p></div></details>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact sec" id="contato" data-hide-bar>
+<section class="cta sec" id="contato" aria-labelledby="cta-t" data-hide-bar>
   <div class="wrap">
-    <div class="contact-grid">
-      <div class="contact-copy">
-        <h2 data-reveal>Conta o problema. O resto é comigo.</h2>
-        <p class="lead" data-reveal>Perguntar o que é possível resolver não custa nada. Mande uma mensagem e a gente combina daí.</p>
-        <div class="contact-list" data-reveal>
-          <a href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener">WhatsApp (85) 98840-2761</a>
-          <a href="mailto:daniloliracontato@hotmail.com">daniloliracontato@hotmail.com</a>
-          <p>Segunda a sexta, 8h às 19h. Sábado, 8h às 15h.</p>
-        </div>
+    <h2 id="cta-t" class="t1b" data-reveal><span class="l">Conte o problema.</span> <span class="l">O resto é comigo.</span></h2>
+    <div class="cta-row" data-reveal>
+      <p class="lead">Perguntar o que é possível resolver não custa nada. Mande uma mensagem e a gente combina daí.</p>
+      <div class="cta-actions">
+        <a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <p class="note">Segunda a sexta, 8h às 18h. Sábado, 8h às 12h.</p>
       </div>
-      <form class="form" id="form-contato" data-reveal>
-        <h3>Prefere escrever aqui?</h3>
-        <label>Seu nome
-          <input type="text" name="nome" maxlength="60" autocomplete="off" placeholder="Como posso te chamar">
-        </label>
-        <label>Em que você precisa de ajuda?
-          <textarea name="problema" rows="4" maxlength="600" placeholder="Descreva com suas palavras. Ex: o Office não instala e aparece uma mensagem de erro."></textarea>
-        </label>
-        <a class="btn" id="enviar" data-base="https://wa.me/5585988402761" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech.%20Preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener">Enviar no WhatsApp</a>
-        <p class="note">O WhatsApp abre com a sua mensagem já escrita. Nada é salvo neste site. Não escreva senhas, dados de cartão ou documentos aqui.</p>
-      </form>
+    </div>
+    <div class="reach">
+      <a href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener" data-reveal>WhatsApp (85) 98840-2761</a>
+      <a href="mailto:daniloliracontato@hotmail.com" data-reveal>daniloliracontato@hotmail.com</a>
     </div>
   </div>
 </section>
@@ -517,15 +537,14 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/logo-dltech.png" width="173" height="36" alt="DLTech, suporte remoto" loading="lazy">
         <p>Suporte remoto via AnyDesk, com orientação incluída.</p>
         <p>Atendimento somente à distância, em todo o Brasil.</p>
+        <p class="note">Segunda a sexta, 8h às 18h. Sábado, 8h às 12h.</p>
       </div>
       <div class="foot-col c1">
         <strong>Contato</strong>
         <a href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener">WhatsApp (85) 98840-2761</a>
         <a href="mailto:daniloliracontato@hotmail.com">daniloliracontato@hotmail.com</a>
-        <p class="note">Segunda a sexta, 8h às 19h. Sábado, 8h às 15h.</p>
       </div>
       <div class="foot-col c2">
         <strong>Guias</strong>
@@ -542,11 +561,12 @@
         <a href="termos.html">Termos de atendimento</a>
       </div>
     </div>
-    <p class="foot-legal note">© 2026 DLTech. Todos os direitos reservados. Este site não usa cookies nem rastreadores. <a href="#topo">Voltar ao topo</a></p>
+    <p class="foot-legal note">© 2026 DLTech. Este site não usa cookies nem rastreadores. <a href="#topo">Voltar ao topo</a></p>
   </div>
+  <p class="foot-mark" aria-hidden="true">DLTech</p>
 </footer>
 
-<div class="wa-bar"><a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener">Falar no WhatsApp</a></div>
+<div class="wa-bar"><a class="btn" href="https://wa.me/5585988402761?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20DLTech%20e%20preciso%20de%20ajuda%20com%20o%20meu%20computador." target="_blank" rel="noopener">WhatsApp</a></div>
 
 <script src="assets/app.js" defer></script>
 </body>

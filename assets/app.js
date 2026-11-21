@@ -2,6 +2,14 @@
   "use strict";
   window.__dltReady = true;
 
+  /* entrada do título do topo: espera a fonte carregar para não "pular" */
+  var root = document.documentElement;
+  var go = function () { root.classList.add("go"); };
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () { window.requestAnimationFrame(go); });
+    setTimeout(go, 1200);
+  } else { go(); }
+
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* menu do celular */
@@ -77,26 +85,5 @@
       bar.classList.toggle("hide", seen.size > 0);
     }, { rootMargin: "0px 0px -90px 0px", threshold: 0 });
     watch.forEach(function (el) { io2.observe(el); });
-  }
-
-  /* formulário: monta a mensagem e atualiza o link do WhatsApp */
-  var form = document.getElementById("form-contato");
-  if (form) {
-    var send = document.getElementById("enviar");
-    var base = send.getAttribute("data-base");
-    var nome = form.elements["nome"];
-    var problema = form.elements["problema"];
-    var update = function () {
-      var n = nome.value.trim();
-      var p = problema.value.trim().replace(/\s+/g, " ").replace(/[.!]+$/, "");
-      var txt = "Olá! Vim pelo site da DLTech." + (n ? " Meu nome é " + n + "." : "");
-      if (p) txt += "\n\nResumo: " + p + ".";
-      else txt += " Preciso de ajuda com o meu computador.";
-      send.href = base + "?text=" + encodeURIComponent(txt);
-    };
-    nome.addEventListener("input", update);
-    problema.addEventListener("input", update);
-    form.addEventListener("submit", function (e) { e.preventDefault(); update(); window.open(send.href, "_blank", "noopener"); });
-    update();
   }
 })();
